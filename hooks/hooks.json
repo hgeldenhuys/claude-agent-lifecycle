@@ -1,0 +1,22 @@
+{
+  "Stop": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bun \"${CLAUDE_PLUGIN_ROOT}/hooks/lifecycle-manager.ts\""
+        }
+      ]
+    }
+  ],
+  "SessionEnd": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "bun \"${CLAUDE_PLUGIN_ROOT}/hooks/lifecycle-manager.ts\""
+        }
+      ]
+    }
+  ]
+}

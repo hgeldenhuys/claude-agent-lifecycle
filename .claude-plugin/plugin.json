@@ -1,0 +1,25 @@
+{
+  "name": "claude-agent-lifecycle",
+  "description": "Persistent agent lifecycle management for Claude Code. Provides 6 agent lifespans (ephemeral, turn, context, session, workflow, project) with automatic disposal via hooks.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hendrik Geldenhuys",
+    "url": "https://github.com/hgeldenhuys"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hgeldenhuys/claude-agent-lifecycle"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agent-lifecycle",
+    "persistent-agents",
+    "workflow",
+    "session-management",
+    "hooks"
+  ],
+  "hooks": {
+    "Stop": "hooks/lifecycle-manager.ts",
+    "SessionEnd": "hooks/lifecycle-manager.ts"
+  }
+}

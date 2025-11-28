@@ -1,0 +1,38 @@
+{
+  "name": "claude-skills-marketplace",
+  "description": "Official marketplace for Claude Code agent lifecycle, knowledge management, and SDLC orchestration plugins",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Hendrik Geldenhuys",
+    "url": "https://github.com/hgeldenhuys"
+  },
+  "plugins": [
+    {
+      "name": "claude-agent-lifecycle",
+      "description": "Persistent agent lifecycle management with 6 lifespans (ephemeral, turn, context, session, workflow, project)",
+      "version": "1.0.0",
+      "source": "./",
+      "keywords": ["agent-lifecycle", "persistent-agents", "workflow", "hooks"]
+    },
+    {
+      "name": "claude-weave",
+      "description": "11-dimensional knowledge framework with Shadow Advisor, Librarian, and Bayesian fact tracking",
+      "version": "2.1.0",
+      "source": {
+        "source": "github",
+        "repo": "hgeldenhuys/claude-weave"
+      },
+      "keywords": ["knowledge-management", "institutional-memory", "shadow-advisor"]
+    },
+    {
+      "name": "claude-loom",
+      "description": "Autonomous SDLC orchestration with workflow-scoped story execution agents",
+      "version": "2.0.0",
+      "source": {
+        "source": "github",
+        "repo": "hgeldenhuys/claude-loom"
+      },
+      "keywords": ["sdlc", "orchestration", "workflow", "story-execution"]
+    }
+  ]
+}
