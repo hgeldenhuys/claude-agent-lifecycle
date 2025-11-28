@@ -10,22 +10,39 @@ Persistent agent lifecycle management for Claude Code. Create, resume, and dispo
 - **Memory Storage**: In-memory storage for ephemeral/turn/context agents
 - **Debug Mode**: Opt-in JSON logging for debugging and monitoring
 - **Hook Integration**: Uses `claude-hooks-sdk` for lifecycle event handling
+- **Claude Code Plugin**: Install via plugin marketplace with automatic hook wiring
 
 ## Installation
 
-```bash
-# Install the package
-bun add @anthropic/claude-agent-lifecycle
+### As Claude Code Plugin (Recommended)
 
-# Run the installer to set up hooks
-bunx @anthropic/claude-agent-lifecycle install
+```bash
+# Add the marketplace
+/plugin marketplace add hgeldenhuys/claude-agent-lifecycle
+
+# Install the plugin (hooks auto-wired)
+/plugin install claude-agent-lifecycle
 ```
 
-Or install manually:
+### As npm Package
 
 ```bash
-bun add @anthropic/claude-agent-lifecycle
+# Install the package
+bun add claude-agent-lifecycle
+
+# Run the installer to set up hooks
 bun scripts/install.ts
+```
+
+### Related Plugins
+
+This plugin is the base for:
+- **[claude-weave](https://github.com/hgeldenhuys/claude-weave)** - 11D knowledge framework with Shadow Advisor
+- **[claude-loom](https://github.com/hgeldenhuys/claude-loom)** - SDLC orchestration with workflow agents
+
+Install the full stack:
+```bash
+/plugin install claude-loom  # Installs all dependencies
 ```
 
 ## Quick Start
