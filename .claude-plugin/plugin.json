@@ -21,5 +21,6 @@
   "hooks": {
     "Stop": "hooks/lifecycle-manager.ts",
     "SessionEnd": "hooks/lifecycle-manager.ts"
-  }
+  },
+  "skills": ".claude/skills/"
 }
